@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>문자참조</title>
+    <style>
+        p,span,div {background:rgb(189, 196, 189)}
+    </style>
+</head>
+<body>
+    <h1>문자참조 예제</h1>
+    <p>Lorem &lt;ipsum&gt; dolor sit amet.</p>
+    <p>coplight &copy;</p>
+    <p><dfn title="카파라이츄의 기념사적인 작곡을 기리기 위해 고대 이집트에서 만들어진 축약형 언어이다">(c)</dfn></p>
+    <div>이런것이 필요할때는 문자참조를 검색해볼것</div>
+    <span>dkfslkfjslkdfjlsd</span>
+    <span>dkfslkfjslkdfjlsd</span>
+    <span>dkfslkfjslkdfjlsd</span>
+    <div>
+        html이란 웹 문서를 만들기 위하여 사용하는 
+        기본적인 프로그래밍 언어의 한 종류이나 하이퍼텍스트를 작성하기 위해 개발되었다
+    </div>
+    <p>월드와이드<abbr title="월드 와이드 웹 콘소리즘">w3c</abbr></p>
+    <div><time datetime="2017-09-01"></time>오늘의 날짜는?</div>
+    <hr>
+    <blockquote>
+        <!-- 인용문 들여쓰기가 가능한 태그이다 -->
+        dkfnlsdkfjl
+        <pre>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, ut.</pre>
+        <footer>
+            출처 :<cite><a href="https://www.inflearn.com/course/html-css-webazit/lecture/12782?tab=note&speed=1.5">여기는 출처나 연락처를 나타내기 좋은 곳이다</a></cite>
+        </footer>
+    </blockquote>
+    <pre>
+        글씨체가 바뀌면서 작성한 그대로 화면에 출력이 된다
+        Lorem ipsum, dolor sit amet                            consectetur adipisicing elit. Soluta sed voluptatibus voluptatum
+    </pre>
+    <ul>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, recusandae.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, recusandae.</li>
+        <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero, recusandae.</li>
+    </ul>
+
+    <ol type="a">
+        type에 따라 숫자로 나올지 알파벳으로 나올지 갈린다 i는 로마로 나온다
+        <li>
+            Lorem, ipsum.
+            <ul>
+                <li>lorem10</li>
+                <li>lorem10</li>
+                <li>lorem10</li>
+            </ul>
+        </li>
+        <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </li>
+        <li>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+        </li>
+    </ol>
+    <dl>
+        <dt>여기는 인라인 태그만 와야하고 보통 용어대한 설명 여기는 용어</dt>
+        <dt>여기는 인라인 태그만 와야하고 보통 용어대한 설명 여기는 용어</dt>
+        <dt>여기는 인라인 태그만 와야하고 보통 용어대한 설명 여기는 용어</dt>
+        <dd>여기는 아무거나 와도 상관이 없다 여기는 용어에 대한 설명 몇개가 와도 상관이 없다</dd>
+        <dd>여기는 아무거나 와도 상관이 없다</dd>
+        <dd>여기는 아무거나 와도 상관이 없다</dd>
+    </dl>
+
+
+    <ol>
+        <li>
+            <a href="https://www.inflearn.com/course/html-css-webazit/lecture/12785?tab=note&speed=1.5" title="마우스를 올리면 어디로 이동한다설명">
+                인프런으로 이동
+            </a>
+        </li>
+        <li>
+            <a href="https://www.inflearn.com/course/html-css-webazit/lecture/12785?tab=note&speed=1.5" 
+                title="마우스를 올리면 어디로 이동한다설명"
+                target="_blank"
+                tabindex="1"
+            >
+                인프런으로 이동
+            </a>
+        </li>
+        <li>
+            <a href="img/photo.jpg" download> 다운로드 속성을 주면 클릭시 다운로드가 된다포도 이미지</a>
+        </li>
+        <li>
+            <a href="index.html">다른 파일로 이동</a>
+        </li>
+        <li>
+            <a href="https://www.inflearn.com/course/html-css-webazit/lecture/12785?tab=note&speed=1.5" 
+                title="마우스를 올리면 어디로 이동한다설명"
+                target="_blank"
+                accesskey="w"
+            >
+            accesskey속성을 주면 크롬에서는 알트 + w를 누르면 링크로 이동을 한다
+            </a>
+        </li>
+        <li>
+            <tabindex>속성은 탭키를 쳤을때 실선으로 움직이는 것들을 미리 정해놓는다
+                ex) tabindex : a, input, button, select
+            </tabindex>
+        </li>
+    </ol>
+    <div>
+        이미지맵이란 그림은 하나인데 영역은 여러개 놓고 싶을때 놓는 것
+        <h1>imagemap</h1>
+        <p><a href="#"><img src="#" alt=""></a></p> 이럴경우 링크가 이미지 하나로밖에 잡히지 않는다
+
+        <p>
+            <img src="" alt="" usemap="#map">
+            <map name="map" id="map">
+                <area shape="rect" coords="15,25,218,84" href="" alt=""> 
+                사각형 우선 포토샵으로 좌표를 알아내야한다 왼쪽 위 좌표, 오른쪽 아래 좌표(x,y)
+                <area shape="circle" coords="308,55,50" href="" alt="">원형
+                원형은 중심좌표를 알아내면 된다 그 후에 반지름을 입력하면 된다
+                <area shape="poly" coords="" href="" alt="">다각형
+                다각형은 꼭지점마다 순서대로 x,y좌표를 넣어주면 된다. 
+                마지막으로 돌아갈 처음좌표를 넣어주면 완성이다 육각형이면 총 7개의 좌표가 필요하다(6개도 딱히 문제가 없다고 함)
+            </map>
+        </p>
+    </div>
+    <div> src를 이용해 내가 적용하고 싶은 파일을 연결이 가능하다 sandbox는 보안을 위한것으로 스크립트부분은 실행이 안된다 
+        <iframe src="./bodeca10.jpg" width="400" sandbox="sandbox" height="300" frameborder="10" title="아이프레임이라고 알려줘야한다"></iframe>
+    </div>
+    <hr />
+    <div>
+        여기서는 form컨트롤 알아보기
+        <form  action="#">
+            <p>post를 쓰게 되면 그냥 넘어가고
+                get를 쓰게 되면 이동되는 주소창에 input의 name과 value가 표시가 된다
+            </p>
+            아이디 : <input type="text" name="filed">
+            <input type="submit" value="전송">
+            <p>내가 전송을 눌렀을떄 form에 있는 action에 연결된 파일로 전송이 되는 것이다.</p>
+            <button>전송</button>
+        </form>
+    </div>
+    <p>
+        <hr />
+    </p>
+    <div>
+        <form action="#" method="post" >
+            form태그에다가 novalidate="novalidate" 속성을 넣어주면 문법검사를 하지 않는다 이메일 아이디만 써도 넘어가기
+        <fieldset>
+            <legend>로그인 관련</legend>
+            <p>
+                <label for="name">이름 : </label>
+                <input type="text" id="name">
+            </p>
+            <p>
+                <label for="idname">아이디 : </label>
+                <input type="text" id="idname" name="idname">
+                <input type="button" value="아이디 중복 확인">
+            </p>
+            <p>
+                <label for="password">비밀번호 : </label>
+                <input type="password" id="password" name="passowrd">
+            </p>
+            <p>
+                <label for="usercomment">의견 :  </label>
+                <textarea name="usercomment" id="usercomment" cols="30" rows="10"></textarea>
+            </p>
+            <p>
+                <label for="userselect">지역선택</label>
+                <select name="userselect" id="userselect">
+                    <option value="1">서울</option>
+                    <option value="2">경기도</option>
+                    <option value="3">강원도</option>
+                    <option value="4">충남</option>
+                    <option value="5">충북</option>
+                    <option value="6">경북</option>
+                </select>
+            </p>
+            <p>
+                성별 : 
+                <label for="man">남자 </label>
+                <input type="radio" id="man" name="gender" value="남자">
+                <label for="woman">여자 </label>
+                <input type="radio" id="woman" name="gender" value="여자">
+            </p>
+            <p>
+                <span>취미는</span>
+                <label for="travel">여행</label>
+                <input type="checkbox" id="travel" name="travel" value="travel">
+                <label for="read">독서</label>
+                <input type="checkbox" id="read" name="read" value="read">
+                <label for="movie">영화감상</label>
+                <input type="checkbox" id="movie" name="movie" value="movie">
+            </p>
+            <p>
+                <h1>or</h1>
+                <h3>(코드가 다르다)</h3>
+            </p>
+            <p>
+                <span>취미는 : </span>
+                <label>여행 <input type="checkbox" name="travel" value="travel"></label>
+                <label>독서 <input type="checkbox" name="read" value="read"></label>
+                <label>영화감상 <input type="checkbox" name="movie" value="movie"></label>
+            </p>
+            <p>
+                <label>이메일 <input type="email" id="email" name="email"></label>
+            </p>
+            <p>
+                <label>웹사이트 <input type="url"></label>
+            </p>
+            <p>
+                <label>주문수량 <input type="number" min="1" max="3"></label>
+            </p>
+            <p>
+                <label> 길이 <input type="range" min="0" max="10" value="3" step="3"></label>
+            </p>
+            <p>
+                <label>제출일 <input type="date"min="2017-09-09" max="2019-09-09"></label>
+            </p>
+            <p>
+                <label>색상선택 <input type="color" value="#11b815"></label>
+            </p>
+            <p>
+                <label>연락처 <input type="tel "></label>
+            </p>
+        </fieldset>
+        <p>
+            <input type="submit" value="전송">
+            <input type="reset" value="취소">
+        </p>
+        <div>
+            disable:"disable"속성을 주면 입력이 안된다 
+            autofocus:"autofocus" 오토포커스는 하나에만 적용이 가능
+            required:"required" 필수입력항목을 지정하는 것
+            autocomplete:"off" 기본이 켜져있기에 off로 안쓴다고 하는 것
+        </div>
+    </form>
+    </div>
+</body>
+</html>
